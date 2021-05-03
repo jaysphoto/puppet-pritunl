@@ -1,0 +1,19 @@
+# Defaults
+*~
+*#
+.#*
+\#*#
+.*.sw[a-z]
+*.un~
+pkg/
+/.idea
+
+# Ruby
+Gemfile.lock
+.bundle/**
+/.rakeTasks
+
+# Puppet
+Puppetfile.lock
+spec/fixtures/**
+
