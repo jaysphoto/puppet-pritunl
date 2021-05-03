@@ -5,9 +5,10 @@ ruby '~>2.0'
 gem 'rake'
 
 group :test do
-  gem 'puppet-lint'
   gem 'puppetlabs_spec_helper'
-  gem 'rspec-puppet'
+  gem 'puppet-lint'
+  gem 'rspec-puppet', '~>2.8.0'
   gem 'rspec-puppet-utils'
-  gem 'rubocop', '~>0.49.0'
+  gem 'rubocop'
+  gem 'rubocop-rake'
 end
