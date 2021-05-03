@@ -5,6 +5,7 @@ ruby '~>2.0'
 gem 'rake'
 
 group :test do
+  gem 'puppet-lint'
   gem 'puppetlabs_spec_helper'
   gem 'rspec-puppet'
   gem 'rspec-puppet-utils'

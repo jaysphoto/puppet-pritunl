@@ -20,8 +20,7 @@ class pritunl::centos {
     descr    => 'Pritunl Repository',
     baseurl  => "https://repo.pritunl.com/stable/yum/centos/${::facts['os']['release']['major']}/",
   }
-  ->
-  package { 'pritunl':
+  ->package { 'pritunl':
     ensure  => present,
     require => [Package['epel-release'], Exec['install-gpg-key']]
   }
