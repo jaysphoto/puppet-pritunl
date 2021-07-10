@@ -18,4 +18,15 @@ describe 'pritunl' do
     it { is_expected.to compile }
     it { is_expected.to contain_class('pritunl::centos') }
   end
+
+  context 'when using ubuntu' do
+    let(:title) { 'pritunl-ubuntu' }
+    let(:facts) { { os: { name: 'Ubuntu' } } }
+    let(:pre_condition) do
+      (MockResource.new 'pritunl::ubuntu', {}).render
+    end
+
+    it { is_expected.to compile }
+    it { is_expected.to contain_class('pritunl::ubuntu') }
+  end
 end

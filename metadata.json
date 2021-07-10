@@ -9,6 +9,10 @@
   "issues_url": "https://github.com/jaysphoto/puppet-pritunl/issues",
   "dependencies": [
     {
+      "name": "puppetlabs/apt",
+      "version_range": ">= 5.0.0"
+    },
+    {
       "name": "puppetlabs/stdlib",
       "version_range": ">= 1.0.0"
     },
