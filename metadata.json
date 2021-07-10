@@ -1,6 +1,6 @@
 {
   "name": "pritunl",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Jay (Geoffrey) De Kleijn",
   "summary": "This module installs and manages Pritunl VPN software",
   "license": "Apache 2.0",
@@ -8,6 +8,10 @@
   "project_page": "https://github.com/jaysphoto/puppet-pritunl",
   "issues_url": "https://github.com/jaysphoto/puppet-pritunl/issues",
   "dependencies": [
+    {
+      "name": "puppetlabs/apt",
+      "version_range": ">= 5.0.0"
+    },
     {
       "name": "puppetlabs/stdlib",
       "version_range": ">= 1.0.0"
@@ -20,6 +24,9 @@
   "operatingsystem_support": [
     {
       "operatingsystem": "CentOS"
+    },
+    {
+      "operatingsystem": "Ubuntu"
     }
   ],
   "requirements": [
@@ -29,6 +36,9 @@
     }
   ],
   "tags": [
-    "CentOS"
+    "CentOS",
+    "Ubuntu",
+    "openvpn",
+    "pritunl"
   ]
 }
