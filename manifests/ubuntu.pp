@@ -1,3 +1,4 @@
+# Ubuntu specific installer manifest
 class pritunl::ubuntu {
 #  apt::key { 'pritunl':
 #    id => '7568D9BB55FF9E5287D586017AE645C0CF8E292A',
