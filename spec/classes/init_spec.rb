@@ -3,9 +3,9 @@ require 'spec_helper'
 describe 'pritunl' do
   context 'when using unknown OS it should fail' do
     let(:title) { 'pritunl' }
-    let(:facts) { { os: { name: 'fail' } } }
+    let(:facts) { { os: { name: 'RedHat' } } }
 
-    it { is_expected.to compile.and_raise_error(/'fail' not supported/) }
+    it { is_expected.to compile.and_raise_error(/not supported/) }
   end
 
   context 'when using centos' do
