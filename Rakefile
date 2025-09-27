@@ -6,6 +6,8 @@ CLEAN.include('spec/fixtures/')
 
 require 'puppetlabs_spec_helper/rake_tasks'
 
+RuboCop::RakeTask.new
+
 PuppetLint::RakeTask.new :lint do |config|
   # Pattern of files to check, defaults to `**/*.pp`
   config.pattern = 'manifests/**/*.pp'
@@ -13,5 +15,4 @@ PuppetLint::RakeTask.new :lint do |config|
   config.with_context = true
 end
 
-task test: %w[rubocop lint spec]
-task default: %i[clean test]
+task test: %w[clean rubocop lint spec]

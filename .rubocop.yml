@@ -1,8 +1,12 @@
+plugins:
+    - 'rubocop-rake'
+
 AllCops:
+  NewCops: 'enable'
   TargetRubyVersion: 2.7
-  NewCops: enable
   Exclude:
     - 'spec/fixtures/**/*'
+    - 'vendor/**/*'
 
 Layout/LineLength:
   Max: 100

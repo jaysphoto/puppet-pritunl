@@ -1,3 +1,4 @@
+# CentOS specific installer manifest
 class pritunl::centos {
   package { 'epel-release': }
 

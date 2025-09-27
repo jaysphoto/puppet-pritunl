@@ -6,7 +6,7 @@ gem 'rake'
 
 group :test do
   gem 'puppetlabs_spec_helper'
-  gem 'puppet-lint'
+  gem 'puppet-lint', '~>2.5.2'
   gem 'rspec-puppet', '~>2.8.0'
   gem 'rspec-puppet-utils'
   gem 'rubocop'

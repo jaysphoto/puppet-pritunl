@@ -15,7 +15,7 @@ describe 'pritunl::centos' do
       ).render
     end
 
-    it { is_expected.to contain_file('/etc/pki/rpm-gpg/RPM-GPG-KEY-pritunl')\
+    it { is_expected.to contain_file('/etc/pki/rpm-gpg/RPM-GPG-KEY-pritunl')
       .with_content(/BEGIN PGP PUBLIC KEY BLOCK/)
     }
     it { is_expected.to contain_package('pritunl') }
